@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter & EMI Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Currency Converter & EMI Calculator</h1>
+        <p>Switch between tools to calculate currency exchange or loan EMI</p>
+    </div>
+
+    <div class="main-container">
+        <!-- Currency Converter Section -->
+        <div class="section" id="currency">
+            <h2>Currency Converter</h2>
+            <input type="number" id="amount" placeholder="Enter amount" />
+            <select id="fromCurrency"></select>
+            <select id="toCurrency"></select>
+            <button id="convert">Convert</button>
+            <div id="conversionResult"></div>
+        </div>
+
+        <!-- EMI Calculator Section -->
+        <div class="section" id="emi">
+            <h2>EMI Calculator</h2>
+            <input type="number" id="loanAmount" placeholder="Loan Amount" />
+            <input type="number" id="interestRate" placeholder="Annual Interest Rate (%)" />
+            <input type="number" id="loanTenure" placeholder="Loan Tenure (months)" />
+            <button id="calculateEMI">Calculate EMI</button>
+            <div id="emiResult"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
